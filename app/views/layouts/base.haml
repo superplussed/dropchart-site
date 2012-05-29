@@ -1,26 +1,24 @@
 !!!
 %head
-  %title D4 - Easy Drop-in Charts
+  %title Dropchart - Easy Drop-in Charts
   =stylesheet_link_tag "http://fonts.googleapis.com/css?family=Oleo+Script|Days+One"  
   =stylesheet_link_tag "/stylesheets/bootstrap.min.css"
   =stylesheet_link_tag "/stylesheets/twilight.css"
   =stylesheet_link_tag "/stylesheets/colorpicker.css"
   =stylesheet_link_tag "/stylesheets/d4.css"
-  =stylesheet_link_tag "/stylesheets/demo.css"
+  =stylesheet_link_tag "/stylesheets/main.css"
 
 %html
   %body
-    =link_to(image_tag("https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png", {width: "110", height: "110", style: "position: fixeD; top: 0; right: 0; border: 0; z-index:1009", alt: "Fork Me on Github"}), "https://github.com/redcashion/d4")
+    =link_to(image_tag("https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png", {width: "110", height: "110", style: "position: fixeD; top: 0; right: 0; border: 0; z-index:1009", alt: "Fork Me on Github"}), "https://github.com/superplussed/dropchart")
     #container
       #fixed
         #header
           #title-container
-            %h1 D4.js
+            %h1 Dropchart.js
           #description-container
             .description
-              %span Easy drop-in charts using the magic of 
-              %span=link_to("D3.js", "https://github.com/mbostock/d3/wiki")
-              %span .
+              %span Easy breezy drop-in charts
         #histogram
         #tabs-container
           %ul#tabs{class: 'nav nav-tabs'}
@@ -31,15 +29,16 @@
             %li
               %a{href: "#data", "data-toggle" => "tab"} Edit Data
             %li
+              %a{href: "#tests", "data-toggle" => "tab"} Run Tests
+            %li
               %a{href: "#api", "data-toggle" => "tab"} API
       =yield
       
     %footer
-      %span Major props and thanks to 
-      %span=link_to("Mike Bostock", "https://twitter.com/#!/mbostock")
-      %span for his amazing work in creating D3.
-      %br
-      %span The author of this library is Jeremy Smith, who can be contacted on github or through 
-      %span=link_to("email", "mailto:xperts@gmail.com")
+      %span ~ Authored by Jeremy Smith ~
+      %span=link_to("Email", "mailto:jeremy@superplussed.com")
+      %span ~
+      %span=link_to("Github", "https://github.com/superplussed")
+      %span ~
 
     %script{type: "text/javascript", "data-main" => "javascripts/main", src: "javascripts/vendor/require.js"}

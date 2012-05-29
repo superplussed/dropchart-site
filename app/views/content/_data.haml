@@ -4,10 +4,10 @@
       .data-row
         .data-value
           .data-label xValue
-          %input.data-input{"data-bind" => "value:$data.xValue, valueUpdate:'keyup'"}
+          %input.data-input{"data-bind" => "value:$data.x, valueUpdate:'keyup'"}
         .data-value
           .data-label yValue
-          %input.data-input{"data-bind" => "value:$data.yValue, valueUpdate:'keyup'"}
+          %input.data-input{"data-bind" => "value:$data.y, valueUpdate:'keyup'"}
         .data-delete
           %a.btn.btn-danger{href: "#", "data-bind" => "click:$root.dataView.removeData"}
             %i.icon-trash.icon-white

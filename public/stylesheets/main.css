@@ -72,7 +72,7 @@ input, select {
 
 h1{
   font-family: 'Days One', sans-serif;
-  font-size: 70px;
+  font-size: 50px;
   color: #FFF;
   font-weight: bold;
   margin: 0;
@@ -110,8 +110,8 @@ h3 {
 
 #description-container {
   position: absolute;
-  top: 34px;
-  left: 280px;
+  top: 27px;
+  left: 422px;
   overflow: hidden;
   white-space:nowrap;
 }
