@@ -1,0 +1,85 @@
+.bar {
+  pointer-events: all;
+  color: #FFF;
+  border: 1px solid black;
+  z-index: 999;
+}
+
+.svg-hide {
+  display: none;
+  stroke-width: 0px;
+}
+
+.svg-show {
+  display: inline;
+}
+
+.d4-canvas {
+  position: relative;
+  z-index: 997;
+  height: 100%;
+  width: 100%;
+}
+
+.d4-histogram-bg {
+  pointer-events: all;
+  z-index: 997;
+}
+
+path.line {
+  fill: none;
+  stroke: #666;
+  stroke-width: 1.5px;
+}
+
+path.area {
+  fill: #e7e7e7;
+}
+
+.axis
+  shape-rendering: crispEdges;
+}
+
+.x.axis line {
+  stroke: #fff;
+}
+
+.x.axis .minor {
+  stroke-opacity: .5;
+}
+
+.x.axis path {
+  display: none;
+}
+
+.y.axis line, .y.axis path {
+  fill: none;
+  stroke: #FFF;
+}
+
+text {
+  fill: #FFF;
+}
+
+rect.d4-popover-rect {
+  padding: 20px;
+  fill: #FFF;
+  opacity: 0.9;
+  width: 100px;
+  height: 100px;
+}
+
+.chart-canvasbar-popover {
+  pointer-events: all;
+}
+
+.x-line {
+  fill: #666;
+  stroke: #666;
+  stroke-width: 1px;
+  z-index: 995;
+}
+
+.bar, .bar-hover, .bar-bg, .bar-bg-hover, .barGroup {
+  z-index: 999;
+}

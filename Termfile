@@ -1,0 +1,21 @@
+# COMMENT OF SCRIPT HERE
+# you can make as many tabs as you wish...
+# tab names are actually arbitrary at this point too.
+
+setup 'echo "setup"'
+
+tab "echo 'default'", "echo 'default tab'"
+
+window do
+
+  tab "d4" do
+    run "echo 'named tab'"
+    run "cd ~/proj/d4"
+  end
+
+  tab "server" do
+    run "echo 'named tab'"
+    run "padrino start -p 3000 -e development -a thin"
+  end
+
+end

@@ -1,0 +1,29 @@
+#test-drive.content-container{"data-bind" => "show:currentTab() === '#test-drive'"}
+  #fields{"data-bind" => "foreach:chartOptions"}
+    .text-box
+      .category-name
+        %h2{"data-bind" => "text:$data.name"}
+      .category-fields{"data-bind" => "foreach:$data.fields()"}
+        .input-row
+          .field-key
+            %h3{"data-bind" => "text:$data.name"}
+
+          .bool-container{"data-bind" => "if:$data.type === 'bool'"}
+            %input{type: "checkbox", "data-bind" => "checked:$data.value"}
+            //.hint{"data-bind" => "text:$data.hint"}
+
+          .select-container{"data-bind" => "if:$data.type === 'select'"}
+            %select.field-select{"data-bind" => "options:$data.selectOptions, value:$data.value"}
+            //.hint{"data-bind" => "text:$data.hint"}
+
+          .colorpicker-container{"data-bind" => "if:$data.type === 'color'"}
+            .colorpicker.input-append.color{"data-bind" => "dataColor: $data.value()"}
+              %input.span2{type: "text", "data-bind" => "attr: {name: $data.name}, value:$data.value"}
+              %span.add-on
+                %i{"data-bind" => "style:{'background-color':$data.value}"}
+            //.hint{"data-bind" => "text:$data.hint"}
+
+          .default-fields-container{"data-bind" => "if:($data.type !== 'color' && $data.type !== 'bool' && $data.type !== 'select')"}
+            %input.numeric.field-input{type: "text", "data-bind" => "attr: {name: $data.name, disabled: $data.disabled}, value:$data.value, valueUpdate: 'afterkeydown'"}
+            %select.value-type-select{"data-bind" => "visible: $data.type === 'percOrNumber', attr: {disabled: $data.disabled}, options:$root.valueTypeOptions, value:$data.valueType"}
+            //.hint{"data-bind" => "text:$data.hint"}

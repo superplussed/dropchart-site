@@ -1,0 +1,15 @@
+#data.content-container{"data-bind" => "show:currentTab() === '#data'"}
+  #fields.text-box
+    %div{"data-bind" => "foreach:chartData"}
+      .data-row
+        .data-value
+          .data-label xValue
+          %input.data-input{"data-bind" => "value:$data.xValue, valueUpdate:'keyup'"}
+        .data-value
+          .data-label yValue
+          %input.data-input{"data-bind" => "value:$data.yValue, valueUpdate:'keyup'"}
+        .data-delete
+          %a.btn.btn-danger{href: "#", "data-bind" => "click:$root.dataView.removeData"}
+            %i.icon-trash.icon-white
+    .data-insert
+      %a.btn.btn-primary{href: "#", "data-bind" => "click:$root.dataView.insertValues"} Insert New Data

@@ -1,0 +1,342 @@
+body {
+  background-color: #474747;
+  margin: 0;
+  font-family: Sans-Serif;
+  background-image:url('../images/radial-bg.jpg');
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  background-position:center top;
+  color: white;
+  font-size: 14px;
+}
+
+.nav {
+  margin: 0;
+}
+
+code {
+  font-size: 14px;
+}
+pre {
+  font-size: 14px;
+  border-radius: 10px;
+  background: #000;
+  float: left;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  padding: 20px;
+  width: 360px;
+}
+
+#create-code {
+  position: fixed;
+  top: 500px;
+  left: 530px;
+  width: 400px;
+}
+
+.input-prepend input, .input-append input, .input-prepend select, .input-append select, .input-prepend .uneditable-input, .input-append .uneditable-input {
+  position: static;
+}
+
+input.span2, textarea.span2, .uneditable-input.span2 {
+  width: 120px;
+}
+
+input[disabled], select[disabled], textarea[disabled], input[readonly], select[readonly], textarea[readonly] {
+  cursor: not-allowed;
+  background-color: #888;
+  border-color: #888;
+}
+
+input, select {
+  background-color: #CCC;
+  color: #000;
+  font-size: 14px;
+}
+
+.input-append.color .add-on i, .input-prepend.color .add-on i {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 3px;
+}
+
+.nav-tabs li a {
+  border-radius: 4px 4px 0 0;
+  background-color: #3B657D;
+}
+
+.nav-tabs > li {
+  width: 120px;
+  text-align: center;
+  margin: 0;
+}
+
+h1{
+  font-family: 'Days One', sans-serif;
+  font-size: 70px;
+  color: #FFF;
+  font-weight: bold;
+  margin: 0;
+  text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+  text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.5);
+  font-size: 22px;
+  color: #CCC;
+  font-weight: bold;
+  margin: 0;
+}
+
+h3 {
+  font-size: 14px;
+  font-weight: normal;
+  color: #FFF;
+  margin: 0;
+  color: #CCC;
+}
+
+#title-container {
+  float: left;
+  display: block;
+  width: 170px;
+}
+
+#header {
+  height: 75px;
+  display: block;
+  margin: 0 40px;
+}
+
+
+#description-container {
+  position: absolute;
+  top: 34px;
+  left: 280px;
+  overflow: hidden;
+  white-space:nowrap;
+}
+
+.description {
+  line-height: 60px;
+  color: #B3B3B3;
+  font-size: 30px;
+  font-family: 'Oleo Script', cursive;
+}
+
+a {
+  color: white;
+}
+
+a:hover
+{ 
+  color: red;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.description a {
+  font-size: 28px;
+}
+
+#fixed {
+  position: fixed;
+  background-color: #474747;
+  background-image:url('../images/radial-bg.jpg');
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  background-position:center top;
+  width: 100%;
+  padding: 30px 40px 0 0;
+  z-index: 999;
+}
+
+#container {
+  display: inline-block;
+  width: 100%;
+  margin: 0;
+}
+
+#tabs-container {
+  margin-top: 35px;
+}
+
+.color-picker {
+  display: none;
+}
+
+#tabs-content {
+  margin-top: 480px;
+  padding: 20px 40px;
+  background-color: #03081c;;
+  display: block;
+  overflow: hidden;
+}
+
+.nav-tabs {
+  padding-left: 40px;
+}
+
+.data-value {
+width: 188px;
+  float: left;
+}
+
+.data-row {
+  position: relative;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  display: inline-block;
+  padding: 10px;
+  width: 400px;
+  z-index: 1;
+}
+
+.data-input {
+  width: 160px;
+}
+
+.data-insert {
+  margin-top: 20px;
+}
+
+.data-delete {
+  position: absolute;
+  height: 24px;
+  width: 36px;
+  top: 30px;
+  right: 0px;
+}
+
+#histogram {
+  background-image: url("../images/graph-bg.gif");
+  background-color: #000;
+  border: 2px solid #CCC;
+  border-radius: 11px;
+  -moz-box-shadow:  1px 13px 3px #000;
+  -webkit-box-shadow:  1px 13px 3px #000;
+  box-shadow: 1px 13px 3px #000;
+  z-index: 1005;
+  margin: 0 40px;
+}
+
+#fields {
+  width: 430px;
+}
+
+.full {
+  width: 100%;
+}
+
+
+.text-box {
+  width: 100%;
+  display: inline-block;
+padding: 20px;
+ background-color: rgba(69, 69, 69, 0.7);
+border-radius: 5px;
+margin-bottom: 10px;
+border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.hint {
+  color: #999;
+  display: inline-block;
+  margin-left: 20px;
+} 
+
+.content-container {
+  display: none;
+  margin-right: 40px;
+}
+
+.category-name {
+  width: 250px;
+  display: block;
+  float: left;
+}
+
+.category-fields {
+  float: left;
+  width: 570px;
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  padding-left: 30px;
+  overflow: hidden;
+}
+
+.field-key {
+  float: left;
+  width: 180px;
+}
+
+.field-value {
+  float: left;
+}
+
+.field-input {
+  width: 120px;
+}
+
+select.value-type-select {
+  width: 80px;
+}
+
+select.field-select {
+  width: 130px;
+}
+
+footer {
+  background-color: #03081c;
+  padding: 40px 0;
+  font-size: 13px;
+  width: 100%;
+  text-align: center;
+  color: #CCC;
+}
+
+footer a {
+  text-decoration: underline;
+}
+
+.input-row {
+  display: block;
+  width: 700px;
+  height: 40px;
+  padding: 5px;
+}
+
+.feature-row {
+  position: relative;
+  height: 40px;
+}
+        
+.asterisk {
+  position: absolute;
+  top: 13px;
+  left: 10px;
+  color: #064962;
+  font-size: 60px;
+  font-family: 'Oleo Script', cursive;
+}
+.feature {
+  margin-left: 45px;
+}
+
+.feature-text {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+
+.features-box {
+  width: 430px;
+  height: 400px;
+  display: inline-block;
+  padding: 20px;
+  background-color: #cfd0d1;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: black;
+  font-size: 16px;
+}
