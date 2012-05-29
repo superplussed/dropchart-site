@@ -1,0 +1,9 @@
+#histogram {
+  display: block;
+  border: 1px solid gray;
+  background-color: #CCC;
+}
+
+.dc-inner-container {
+  background-color: #FFF;
+}
