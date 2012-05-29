@@ -23,17 +23,20 @@ define(['knockout', 'd4', 'dataView', 'chartData', 'chartOptions', 'bindings', '
       $('.numeric').numeric();
       chartOptions.loaded(true);
     },
+
     createHistogram: function() {
       var options = chartOptions.formatForD4() || self.defaultOptions;
       options.data = chartData.formatForD4();
       options.id = "histogram";
       appState.histogram = new d4.Histogram(options);
     },
+
     updateHistogram: function() {
       appState.histogram.destroy();
       self.createHistogram();
       appState.histogram.create();
     },
+
     getCodeStr: function() {
       var formattedData = chartData.formatForDisplay();
       var formattedOptions = chartOptions.formatForDisplay();
